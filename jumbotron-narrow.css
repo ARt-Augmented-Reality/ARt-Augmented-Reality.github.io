@@ -58,6 +58,17 @@ body {
   margin-top: 28px;
 }
 
+.logo {
+  
+  width:178px;
+  height:65px;
+  
+  /*
+  width:8.22em;
+  height:3em;
+  */
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
