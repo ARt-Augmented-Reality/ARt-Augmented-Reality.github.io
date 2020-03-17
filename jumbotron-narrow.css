@@ -43,7 +43,8 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  padding-top: 24px;
+  padding-bottom: 14px;
 }
 .jumbotron .btn {
   padding: 14px 24px;
@@ -67,6 +68,15 @@ body {
   width:8.22em;
   height:3em;
   */
+}
+
+.nav-pills {
+    font-size:16px;
+    color: black;
+}
+
+.grey {
+    color: red;
 }
 
 /* Responsive: Portrait tablets and up */
