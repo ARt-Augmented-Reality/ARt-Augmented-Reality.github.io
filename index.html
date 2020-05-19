@@ -38,8 +38,8 @@
 									</li>
 								</ul>
 							</li-->
-							<li><a href="#" class="button">Sign Up</a></li>
-							<li><a href="#" class="button">Contact Us</a></li>
+							<li><a href="#cta" class="button">Sign Up</a></li>
+							<!--li><a href="contact.html" class="button">Contact Us</a></li-->
 						</ul>
 					</nav>
 				</header>
@@ -52,7 +52,7 @@
 					<p><br /></p>
 					<ul class="actions special">
 						<li><a href="#" class="button primary">Coming Soon!</a></li>
-						<li><a href="#" class="button">Learn More</a></li>
+						<li><a href="#main" class="button">Learn More</a></li>
 					</ul>
 				</section>
 
@@ -61,13 +61,12 @@
 
 					<section class="box special">
 						<header class="major">
-							<h2><strong>Augmented Reality for Art Buyers and Sellers
-							<!--br />
-							for doing stuff with your phone<--></h2>
-							<p>Introducing a mobile app that lets you preview art on the walls<br />
-							of your living and office spaces before you buy.</p>
+							<h2>Augmented Reality for Art Buyers and Sellers</h2>
+							<p>Find the perfect art piece for your space!<br />
+							Introducing a mobile app that lets you preview art
+							on your walls before you buy.</p>
 						</header>
-						<span class="image featured"><img src="images/screenshot2.jpg" alt="" /></span>
+						<span class="image featured"><img src="images/screenshot4.jpg" alt="" /></span>
 					</section>
 
 					<section class="box special features">
@@ -75,25 +74,21 @@
 							<section>
 								<!--span class="icon solid major fa-bolt accent2"></span-->
 								<span class="image specs mag"><img src="images/magnifier2.png" alt="" /></span>
-								<h3>Search online retailers, local galleries</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<h3>Search local art galleries</h3>
 							</section>
 							<section>
 								<span class="image specs frame"><img src="images/frame5.png" alt="" /></span>
 								<h3>Preview with different frames</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 							</section>
 						</div>
 						<div class="features-row">
 							<section>
 								<span class="image specs star"><img src="images/star3.png" alt="" /></span>
 								<h3>Save favorite paintings</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 							</section>
 							<section>
 								<span class="image specs cart"><img src="images/cart2.png" alt="" /></span>
-								<h3>Link to purchase, shipping</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
+								<h3>Connect to purchase and shipping</h3>
 							</section>
 						</div>
 					</section>
@@ -102,11 +97,12 @@
 						<div class="col-6 col-12-narrower">
 
 							<section class="box special">
-								<span class="image fit target"><img src="images/ARt_test_page.jpg" alt="" /></span>
+								<span class="image fit target"><img src="images/ARt_test_page_internet.jpg" alt="" /></span>
 								<h3>Target Image</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros. Noctilucas noctis tenebris lucem queat aestivis nos.</p>
+								<p>For your phone to render the artwork in AR, print off this target image and pin it to a wall you would like to preview artwork on.</p>
 								<ul class="actions special">
-									<li><a href="#" class="button alt">Print the Target Image</a></li>
+									<li><a onclick="PrintImage('images/ARt_test_page_internet.jpg'); return false;" class="button alt">Print Target Image</a></li>
+
 								</ul>
 							</section>
 
@@ -115,11 +111,6 @@
 
 							<section class="box skinnyimg">
 								<span class="image fit"><img src="images/screenshot3.jpg" alt="" /></span>
-								<!--h3>Accumsan integer</h3>
-								<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button alt">Learn More</a></li>
-								</ul-->
 							</section>
 
 						</div>
@@ -131,7 +122,6 @@
 				<section id="cta">
 
 					<h2>Curious? Sign up for updates!</h2>
-					<p></p>
 
 					<form>
 						<div class="row gtr-50 gtr-uniform">
@@ -155,7 +145,7 @@
 						<!--li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li-->
 					</ul>
 					<ul class="copyright">
-						<li>&copy; 2020 AR.T Augmented Reality.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2020 AR.T Augmented Reality.</li><li>Contact us at: <a href="mailto:info@artaugmentedreality.app">info@artaugmentedreality.app</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
@@ -171,4 +161,20 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+	<script>
+		function ImagetoPrint(source) {
+		    return "<html><head><script>function step1(){\n" +
+		            "setTimeout('step2()', 10);}\n" +
+		            "function step2(){window.print();window.close()}\n" +
+		            "</scri" + "pt></head><body onload='step1()'>\n" +
+		            "<img src='" + source + "' /></body></html>";
+		}
+		function PrintImage(source) {
+		    Pagelink = "about:blank";
+		    var pwa = window.open(Pagelink, "_new");
+		    pwa.document.open();
+		    pwa.document.write(ImagetoPrint(source));
+		    pwa.document.close();
+		}
+	</script>
 </html>
