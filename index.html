@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="assets/css/gallery.css" />
 		<link rel="icon" href="./ARt-icon.ico">
 	</head>
 	<body class="landing is-preload">
@@ -38,7 +40,7 @@
 									</li>
 								</ul>
 							</li-->
-							<li><a href="#cta" class="button">Sign Up</a></li>
+							<li><a href="#cta" class="button">Contact Us</a></li>
 							<!--li><a href="contact.html" class="button">Contact Us</a></li-->
 						</ul>
 					</nav>
@@ -61,11 +63,19 @@
 
 					<section class="box special">
 						<header class="major">
-							<h2>Augmented Reality for Art Buyers and Sellers</h2>
-							<p>Find the perfect art piece for your space!<br />
-							AR.T is a mobile app that lets you preview artworks from local artists and art galleries in real-time.</p>
+							<h2><b>Augmented Reality for Art Buyers and Sellers</b></h2>
+							<p><b>Find the perfect art piece for your space!</b> AR.T is a mobile app that lets you preview artworks from local artists and art galleries on the walls of your living spaces in real-time.</p>
 						</header>
-						<span class="image featured"><img src="images/screenshot4.jpg" alt="" /></span>
+						<p><br /></p>
+						<!-- Carousel goes here -->
+						<!--span class="image featured"><img src="images/screenshot4.jpg" alt="" /></span-->
+						<div class="main-gallery js-flickity" 							
+							data-flickity-options='{ "lazyLoad": 1, "autoPlay": 5000 }'>
+							<div class="gallery-cell">
+								<img class="gallery-cell-image" src="images/screenshot4.jpg" alt="" />
+							</div>
+  							<div class="gallery-cell"></div>
+						</div>
 					</section>
 
 					<section class="box special features">
@@ -73,7 +83,7 @@
 							<section>
 								<!--span class="icon solid major fa-bolt accent2"></span-->
 								<span class="image specs mag"><img src="images/magnifier2.png" alt="" /></span>
-								<h3>Search local art galleries</h3>
+								<h3>Search local artists, art galleries</h3>
 							</section>
 							<section>
 								<span class="image specs share"><img src="images/share2.png" alt="" /></span>
@@ -83,7 +93,7 @@
 						<div class="features-row">
 							<section>
 								<span class="image specs star"><img src="images/star3.png" alt="" /></span>
-								<h3>Save favorite paintings</h3>
+								<h3>Art shown is true to size and scale</h3>
 							</section>
 							<section>
 								<span class="image specs cart"><img src="images/cart2.png" alt="" /></span>
@@ -120,7 +130,7 @@
 			<!-- CTA -->
 				<section id="cta">
 
-					<h2>Curious? Sign up for updates!</h2>
+					<h2>Curious? Send us a message!</h2>
 
 					<form>
 						<div class="row gtr-50 gtr-uniform">
@@ -141,7 +151,7 @@
 						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<!--li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li-->
+						<li><a href="#" class="icon brands fa-linkedin"><span class="label">Github</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; 2020 AR.T Augmented Reality.</li><li>Contact us at: <a href="mailto:info@artaugmentedreality.app">info@artaugmentedreality.app</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -158,6 +168,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 	</body>
 	<script>

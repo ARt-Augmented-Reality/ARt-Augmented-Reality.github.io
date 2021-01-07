@@ -1,0 +1,31 @@
+/* external css: flickity.css, fullscreen.css */
+
+* { box-sizing: border-box; }
+
+.main-gallery {
+  margin-left: 0;
+}
+
+.gallery-cell {
+  width: 100%;
+  /*height: 300px;*/
+  /*margin-right: 10px;*/
+  /* center images in cells with flexbox */
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+}
+
+.gallery.is-fullscreen .gallery-cell {
+  height: 100%;
+}
+
+.gallery-cell-image {
+  display: block;
+  /*max-height: 100%;*/
+  width: 100%
+}
+
+.gallery.is-fullscreen .gallery-cell-image {
+  max-width: 100%;
+}
