@@ -29,3 +29,28 @@
 .gallery.is-fullscreen .gallery-cell-image {
   max-width: 100%;
 }
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: #333;
+}
+.flickity-button:hover {
+  background: #8777FF;
+}
+
+.flickity-prev-next-button {
+  width: 4%;
+  height: 8.5%;
+  border-radius: 5px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -4.8%;
+}
+.flickity-prev-next-button.next {
+  right: -4.8%;
+}

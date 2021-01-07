@@ -3180,9 +3180,10 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("images/newyork.png"), url("../../images/road.jpg");
+		background-attachment: scroll;
+		background-color: #EEE;
+		/*first url sets the diemnsions*/
+		/*background-image: url("images/newyork.png"), url("../../images/featured1024x500.jpg");*/
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
