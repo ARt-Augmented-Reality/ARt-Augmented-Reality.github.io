@@ -3217,6 +3217,11 @@
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
 		}
+		
+		#banner .logo {
+			position: relative;
+        	bottom: 2em;
+		}
 
 		#banner input[type="submit"],
 		#banner input[type="reset"],
