@@ -2492,8 +2492,9 @@
 		
 		@media only screen and (max-width: 768px) {
 			.image.logo {
-				width: 80%;
+				width: 37%;
 				height: auto;
+				padding-top: 4em;
 			}
 		}
 
@@ -3220,7 +3221,7 @@
 		
 		#banner .logo {
 			position: relative;
-        	bottom: 2em;
+        	bottom: 4em;
 		}
 
 		#banner input[type="submit"],
