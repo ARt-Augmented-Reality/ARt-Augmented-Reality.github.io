@@ -493,7 +493,7 @@
 					padding-top: 4em;
 				}
 
-		@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 1600px) {
 
 			.row {
 				display: flex;
@@ -2492,7 +2492,7 @@
 		
 		@media only screen and (max-width: 768px) {
 			.image.logo {
-				width: 37%;
+				width: 39%;
 				height: auto;
 				padding-top: 4em;
 			}
@@ -3400,7 +3400,7 @@
 
 /* Wide */
 
-	@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 1600px) {
 
 		/* Basic */
 
